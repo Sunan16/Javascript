@@ -1,0 +1,22 @@
+footer{
+    background-color: rgba(8, 185, 8, 0.548);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 15px;
+}
+p{
+    font-size: 17px;
+}
+#footer-contatos{
+    background-color: white;
+    padding: 8px;
+}
+.caixa-conteudo{
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 10px 20px;
+}
+.caixa-paragrafo{
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+}
