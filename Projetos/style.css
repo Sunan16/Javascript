@@ -6,7 +6,7 @@ p{
     font-size: 15px;
 }
 a{
-    
+    color: rgb(230, 230, 230);
 }
 #footer-contatos{
     padding: 8px;
@@ -14,6 +14,15 @@ a{
 #cabecalho{
     background-color: rgb(138, 132, 132);
     height: 35px;
+}
+#zap{
+    background-color: rgb(52, 175, 35);
+}
+#face{
+    background-color: #3f729b;
+}
+#insta{
+    background: linear-gradient(40deg, rgba(235, 235, 96, 0.699), rgb(228, 25, 184), rgb(126, 29, 216));
 }
 .caixa-conteudo{
     background-color: antiquewhite;
@@ -26,8 +35,13 @@ a{
     padding: 5px;
 }
 .caixinha-contatos{
+    border: 1px solid rgb(68, 67, 67);
+    border-radius: 5px;
+    margin: 10px 5px;
     background-color: white;
-    padding: 7px;
     height: 50px;
     width: 80px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
 }
