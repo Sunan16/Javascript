@@ -10,22 +10,21 @@ a{
     font-weight: bold;
     color: rgb(230, 230, 230);
 }
-#footer-contatos{
-    padding: 8px;
-}
+    /*
+        Header
+    */
 #cabecalho{
     background-color: rgb(138, 132, 132);
     height: 35px;
 }
-#zap{
-    background-color: rgb(52, 175, 35);
+#logo{
+
 }
-#face{
-    background-color: #3f729b;
-}
-#insta{
-    background: linear-gradient(40deg, rgba(235, 235, 96, 0.699), rgb(228, 25, 184), rgb(126, 29, 216));
-}
+    /*
+        FIM Header
+  --------------------
+        Article
+    */
 .caixa-conteudo{
     width: 1000px;
     background-color: rgb(230, 230, 230);
@@ -37,6 +36,23 @@ a{
     margin: 10px;
     padding: 5px;
     width: 700px;
+}
+    /*
+        FIM Article
+  --------------------
+        Footer
+    */
+#footer-contatos{
+    padding: 8px;
+}
+#zap{
+    background-color: rgb(52, 175, 35);
+}
+#face{
+    background-color: #3f729b;
+}
+#insta{
+    background: linear-gradient(40deg, rgba(235, 235, 96, 0.699), rgb(228, 25, 184), rgb(126, 29, 216));
 }
 .caixinha-contatos{
     border: 2px solid rgb(68, 67, 67);
