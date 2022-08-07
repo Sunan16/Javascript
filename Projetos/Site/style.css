@@ -15,11 +15,10 @@ a{
     */
 #cabecalho{
     background-color: rgb(138, 132, 132);
-    height: 35px;
+    padding: 8px;
+    height: 50px;
 }
-#logo{
 
-}
     /*
         FIM Header
   --------------------
