@@ -1,7 +1,4 @@
-footer{
-    background-color: rgba(122, 122, 122, 0.897);
-    padding: 20px 15px;
-}
+
 p{
     font-size: 15px;
 }
@@ -26,27 +23,37 @@ a{
     /*
         FIM Header
   --------------------
-        Article
+        Container
     */
+.container{
+    background-color: rgb(222, 222, 223);
+    display: grid;
+    grid-template-columns: 1000px auto;
+    grid-template-rows: auto;
+    padding: 40px 50px;
+    gap: 10px;
+}
+
 .caixa-conteudo{
-    width: 1000px;
-    background-color: rgb(230, 230, 230);
-    margin: 20px;
-    padding: 10px 20px;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: rgb(202, 202, 202);
 }
 .caixa-paragrafo{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
     background-color: white;
-    margin: 10px;
-    padding: 10px;
-    width: 700px;
 }
     /*
-        FIM Article
+        FIM Container
   --------------------
         Footer
     */
+
 #footer-contatos{
-    padding: 8px;
+    display: flex;
+    justify-content: center;
 }
 #zap{
     background: linear-gradient(40deg, rgb(52, 175, 35), rgb(97, 211, 82))
@@ -56,6 +63,18 @@ a{
 }
 #insta{
     background: linear-gradient(40deg, rgba(235, 235, 96, 0.699), rgb(228, 25, 184), rgb(126, 29, 216));
+}
+#contatos-footer{
+    display: flex;
+    background-color: #696969;
+    padding: 2px;
+    justify-content: center;
+}
+.footer{
+    background-color: rgba(122, 122, 122, 0.897);
+    display: inline-block;
+    padding: 20px 15px;
+    width: 100%;
 }
 .caixinha-contatos{
     border-radius: 5px;
