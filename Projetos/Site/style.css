@@ -30,12 +30,6 @@ a{
     padding: 20px;
     transition: 1s;
 }
-#logo:hover{
-    font-size:xx-large;
-    text-align: center;
-    padding: 10px;
-    transition: 2s;
-}
 #navegacao{
 
 }
@@ -45,6 +39,12 @@ a{
     border-radius: 30px;
     line-height: 25px;
     padding: 10px 20px;
+}
+.logo:hover{
+    font-size:xx-large;
+    text-align: center;
+    padding: 20px;
+    transition: 2s;
 }
 .links-header{
     color: #93948a;
@@ -85,7 +85,7 @@ a{
 
 .container{
     margin-top: 80px;
-    background-color: rgb(222, 222, 223);
+    background-color: rgb(90, 90, 90);
     display: grid;
     grid-template-columns: 920px 350px;
     padding: 40px 50px;
@@ -94,22 +94,23 @@ a{
 .caixa-conteudo{
     padding: 20px;
     border-radius: 3px;
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(134, 134, 134);
 }
 .caixa-paragrafo{
     margin: 20px;
     padding: 20px;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(83, 83, 83);
+    border: 1px solid white;
+    color: rgb(0, 0, 0);
 }
     /*
         FIM Container
   --------------------
         Footer
     */
-
 #footer-contatos{
-    justify-content: center;
-    width: auto;
+    grid-column-start: 4;
+    grid-row-start: 1;
 }
 #zap{
     background: linear-gradient(40deg, rgb(103, 170, 94), rgb(136, 216, 125))
@@ -129,23 +130,29 @@ a{
 #insta:hover{
     background: linear-gradient(40deg, rgba(235, 235, 96, 0.699), rgb(228, 25, 184), rgb(126, 29, 216));
 }
-#contatos-footer{
+#h3-contato{
     background-color: #696969;
     padding: 2px;
     justify-content: center;
+    text-align: center;
+    border-radius: 5px;
 }
 #creditos{
-    grid-column-start: 2;
-    grid-row-start: 2;
+    text-align: right;
+    grid-column-start: 4;
+    grid-row-start: 4;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.lista-contatos{
+    text-align: center;
 }
 .footer{
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 350px 350px 350px 350px;
     grid-template-rows: 100px 30px;
-    gap: 10px 800px;
-    background-color: rgba(122, 122, 122, 0.897);
-    padding: 20px 15px;
+    background-color: rgb(39, 39, 39);
+    padding: 30px 11px;
     width: 100%;
 }
 .caixinha-contatos{
