@@ -1,4 +1,3 @@
-
 p{
     font-size: 15px;
 }
@@ -15,9 +14,39 @@ a{
         Header
     */
 #cabecalho{
-    background-color: rgb(138, 132, 132);
+    background-color: rgb(175, 174, 174);
+    display: grid;
+    grid-template-columns: 800px 500px;
+    padding: 10px;
+    height: 80px;
+}
+#logo{
+    font-size:x-large;
+    text-align: center;
+    padding: 20px;
+}
+#logo:hover{
+    font-size:xx-large;
+    text-align: center;
+    padding: 10px;
+}
+#navegacao{
+
+}
+
+.logo{
+    background-color: rgb(185, 180, 180);
+    padding: 10px 20px;
+}
+.links-header{
+    color: #43718bf3;
+    border:1px solid red;
+    font-size: 19px;
+}
+.lista-header{
+    margin: 10px 5px;
     padding: 8px;
-    height: 50px;
+    border:1px solid;
 }
 
     /*
@@ -25,15 +54,31 @@ a{
   --------------------
         Container
     */
+#sessao-principal{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+#sidebar{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#sessao-primaria{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 .container{
     background-color: rgb(222, 222, 223);
     display: grid;
-    grid-template-columns: 1000px auto;
-    grid-template-rows: auto;
+    grid-template-columns: 920px 350px;
     padding: 40px 50px;
-    gap: 10px;
+    gap: 20px 50px;
 }
-
 .caixa-conteudo{
     padding: 20px;
     border-radius: 3px;
@@ -42,8 +87,7 @@ a{
 .caixa-paragrafo{
     margin: 20px;
     padding: 20px;
-    border: 1px solid black;
-    background-color: white;
+    background-color: rgb(212, 212, 212);
 }
     /*
         FIM Container
