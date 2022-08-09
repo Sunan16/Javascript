@@ -1,5 +1,5 @@
 p{
-    font-size: 15px;
+    font-size: 14px;
 }
 li{
     display:inline-block;
@@ -14,7 +14,11 @@ a{
         Header
     */
 #cabecalho{
-    background-color: rgb(175, 174, 174);
+    position:fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color: rgb(39, 39, 39);
     display: grid;
     grid-template-columns: 800px 500px;
     padding: 10px;
@@ -24,29 +28,35 @@ a{
     font-size:x-large;
     text-align: center;
     padding: 20px;
+    transition: 1s;
 }
 #logo:hover{
     font-size:xx-large;
     text-align: center;
     padding: 10px;
+    transition: 2s;
 }
 #navegacao{
 
 }
 
 .logo{
-    background-color: rgb(185, 180, 180);
+    background-color: rgb(65, 64, 64);
+    border-radius: 30px;
+    line-height: 25px;
     padding: 10px 20px;
 }
 .links-header{
-    color: #43718bf3;
-    border:1px solid red;
-    font-size: 19px;
+    color: #93948a;
+}
+.links-header:hover{
+    color: #d9ff00;
 }
 .lista-header{
-    margin: 10px 5px;
-    padding: 8px;
-    border:1px solid;
+    line-height: 90px;
+    height: 32px;
+    padding: 0px 10px;
+    text-align: center;
 }
 
     /*
@@ -54,25 +64,27 @@ a{
   --------------------
         Container
     */
-#sessao-principal{
+#content-1{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+}
+#content-2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 #sidebar{
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-#sessao-primaria{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
+
 
 .container{
+    margin-top: 80px;
     background-color: rgb(222, 222, 223);
     display: grid;
     grid-template-columns: 920px 350px;
@@ -96,27 +108,43 @@ a{
     */
 
 #footer-contatos{
-    display: flex;
     justify-content: center;
+    width: auto;
 }
 #zap{
-    background: linear-gradient(40deg, rgb(52, 175, 35), rgb(97, 211, 82))
+    background: linear-gradient(40deg, rgb(103, 170, 94), rgb(136, 216, 125))
 }
 #face{
-    background: linear-gradient(40deg, #3f729b, #104774);
+    background: linear-gradient(40deg, #6d89a0, #285377);
 }
 #insta{
+    background: linear-gradient(40deg, rgba(235, 235, 96, 0.445), rgba(228, 25, 184, 0.473), rgba(126, 29, 216, 0.459));
+}
+#zap:hover{
+    background: linear-gradient(40deg, rgb(52, 175, 35), rgb(97, 211, 82))
+}
+#face:hover{
+    background: linear-gradient(40deg, #3f729b, #104774);
+}
+#insta:hover{
     background: linear-gradient(40deg, rgba(235, 235, 96, 0.699), rgb(228, 25, 184), rgb(126, 29, 216));
 }
 #contatos-footer{
-    display: flex;
     background-color: #696969;
     padding: 2px;
     justify-content: center;
 }
+#creditos{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .footer{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 100px 30px;
+    gap: 10px 800px;
     background-color: rgba(122, 122, 122, 0.897);
-    display: inline-block;
     padding: 20px 15px;
     width: 100%;
 }
@@ -124,9 +152,9 @@ a{
     border-radius: 5px;
     margin: 10px 5px;
     background-color: white;
-    height: 50px;
+    height: 30px;
     width: 85px;
-    line-height: 50px;
+    line-height: 30px;
     text-align: center;
     display: inline-block;
 }
