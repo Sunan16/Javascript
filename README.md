@@ -1,2 +1,0 @@
-# Javascript
- Aprendizado de JavaScript
