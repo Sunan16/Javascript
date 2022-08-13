@@ -6,21 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Javascript</title>
-	<style>
-		*{
-			padding: 0;
-			margin: 0;
-			border: 0;
-			box-sizing: border-box;
-		}
-		body{
-			background-color: whitesmoke;
-			font-family:Arial, Helvetica, sans-serif
-		}
-		
-	</style>
 </head>
-<body>
+<body id="index">
 	<div id="cabecalho">
 
 		<div id="logo">
@@ -28,9 +15,9 @@
 		</div>
 
 		<div id="navegacao">
-			<li class="lista-header" id="link-principal"><a href="" class="links-header">Principal</a></li>
-			<li class="lista-header" id="link-sobre"><a href="" class="links-header">Sobre mim</a></li>
-			<li class="lista-header" id="link-redes"><a href="" class="links-header">Redes Sociais/Contatos</a></li>
+			<li class="lista-header" id="link-principal"><a href="index.html" class="links-header">Principal</a></li>
+			<li class="lista-header" id="link-sobre"><a href="sobre.html" class="links-header">Sobre mim</a></li>
+			<li class="lista-header" id="link-redes"><a href="contato.html" class="links-header">Redes Sociais/Contatos</a></li>
 		</div>
 
 
@@ -126,9 +113,15 @@
 		</div>
 	</div>
 	<script>
-		/*
-		rgb(39, 39, 39)
-		*/
+		const larguraFooter = window.innerWidth
+		const alturaContent = window.innerHeight
+
+		const containerHeight = document.getElementsByClassName('container')[1]
+		const footerWidth = document.getElementsByClassName('footer')[1]
+
+		containerHeight.innerHeight(alturaContent)
+		footerWidth.innerWidth(larguraFooter)
+
 	</script>
 </body>
 </html>
