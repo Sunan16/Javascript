@@ -90,37 +90,38 @@
 
 	<div class="footer">
 		<div id="footer-contatos">
-			<h3 id="h3-contato">Contatos</h3></br>
+			<div id="h3-contato">
+				<h3>Contatos</h3>
+			</div>
 
+			<!--CAIXA DOS CONTATOS-->
+			<div class="caixinha-contatos"  id="zap">
 				<li class="lista-contatos">
-					<div class="caixinha-contatos" id="zap">
-						<p><a href="">Whatsapp</a></p>
-					</div>
+					<p><a href="">Whatsapp</a></p>
 				</li>
+			</div>
+
+			<div class="caixinha-contatos" id="face">
 				<li class="lista-contatos">
-					<div class="caixinha-contatos" id="face">
-						<p><a href="">Facebook</a></p>
-					</div>	
+					<a href="">Facebook</a>
 				</li>
+			</div>
+
+			<div class="caixinha-contatos" id="insta">
 				<li class="lista-contatos">
-					<div class="caixinha-contatos" id="insta">
-						<p><a href="">Instagram</a></p>
-					</div>
+					<a href="">Instagram</a>
 				</li>
+			</div>
+			
+			
 		</div>
 		<div id="creditos">
 			<h5>© 2022 Pedro, copyright</h5>
 		</div>
 	</div>
 	<script>
-		const larguraFooter = window.innerWidth
-		const alturaContent = window.innerHeight
-
-		const containerHeight = document.getElementsByClassName('container')[1]
-		const footerWidth = document.getElementsByClassName('footer')[1]
-
-		containerHeight.innerHeight(alturaContent)
-		footerWidth.innerWidth(larguraFooter)
+		
+		
 
 	</script>
 </body>
