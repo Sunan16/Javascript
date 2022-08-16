@@ -9,7 +9,7 @@ body{
     font-family: 'Space Mono', monospace;
 }
 p{  
-    font-size: 80%;
+    font-size: 0.95rem;
     font-weight: 600;
     color: rgb(59, 59, 59);
     
@@ -136,10 +136,10 @@ h2, #logo, #navegacao{
     font-size: 1.3rem;
 }
 .content-1{
-    padding: 20px 30px;
+    padding: 20px 40px;
 }
 .content-2{
-    padding: 20px 30px;
+    padding: 20px 40px;
 }
 .container-1{
     padding: 60px 100px;
@@ -250,3 +250,29 @@ h2, #logo, #navegacao{
     --------------------
     */
 
+@media screen and (max-width: 1111px){
+    p{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 920px){
+    .content-1{
+        grid-column-start: 2;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 8;
+    }
+    .content-2{
+        grid-column-start: 2;
+        grid-column-end: 11;
+        grid-row-start: 8;
+        grid-row-end: 11;
+    }
+    .sidebar{
+        display: none;
+        grid-column-start: 0;
+        grid-column-end: 0;
+        grid-row-start: 0;
+        grid-row-end: 0;
+    }
+}
