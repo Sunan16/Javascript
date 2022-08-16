@@ -20,7 +20,6 @@ li{
 }
 a{
     text-decoration: none;
-    font-weight: bold;
     color: #ffffff;
 }
 h2{
@@ -76,6 +75,7 @@ h2, #logo, #navegacao{
 }
 .links-header:hover{
     color: #d9ff00;
+    transition: 500ms;
 }
 .lista-header{
     line-height: 90px;
@@ -170,6 +170,7 @@ h2, #logo, #navegacao{
     grid-template-columns: 0% 27% 27% 27% 0%;
     grid-template-rows: 30px 30px;
     gap: 15px 12px;
+    font-family: 'Silkscreen', cursive;
 }
 #footer-contatos a{
     text-shadow: 0 1px 2px black;
@@ -220,7 +221,7 @@ h2, #logo, #navegacao{
     color: rgb(223, 223, 223);
     grid-column-start: 4;
     grid-row-start: 2;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 
@@ -256,24 +257,6 @@ h2, #logo, #navegacao{
     }
 }
 @media screen and (max-width: 1000px){
-    .container-1{
-        display: grid;
-    }
-
-    .content-1{
-        grid-column-start: 1;
-        grid-column-end: 11;
-        grid-row-start: 1;
-        grid-row-end: 6;
-        padding: 15px;
-    }
-    .content-2{
-        grid-column-start: 1;
-        grid-column-end: 11;
-        grid-row-start: 8;
-        grid-row-end: 11;
-        padding: 15px;
-    }
     .sidebar{
         display: none;
         grid-column-start: 0;
@@ -284,7 +267,54 @@ h2, #logo, #navegacao{
     .container-1{
         padding: 3rem 50px;
         grid-template-columns: 10% 10% 10% 15% 10% 10% 5% 10% 5% 5%;
-        grid-template-rows: 60px 80px 60px 150px 30px 80px 60px 150px;
+        grid-template-rows: 60px 80px 60px 150px 30px 30px 60px 150px;
         gap: 15px 0.5%;
+    }
+    .footer{
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: auto 20px;
+        padding-top: 40px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #footer-contatos{
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 30px 30px 30px;
+        gap: 15px 1.2px;
+    }
+    #face{
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    #insta{
+        grid-row-start: 4;
+        grid-column-start: 2
+    }
+    #creditos{
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        font-size: 90%;
+    }
+    @media screen and (max-width: 830px){
+
+        .content-1{
+            grid-column-start: 1;
+            grid-column-end: 11;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            padding: 15px;
+        }
+        .content-2{
+            grid-column-start: 1;
+            grid-column-end: 11;
+            grid-row-start: 7;
+            grid-row-end: 11;
+            padding: 15px;
+        }
     }
 }

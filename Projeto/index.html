@@ -94,12 +94,15 @@
 			
 		</div>
 		<div id="creditos">
-			<h5>© 2022 Pedro, copyright</h5>
+			
 		</div>
 	</div>
 	<script>
-		
-		
+		var creditos = window.document.querySelector('div#creditos')
+		var data = new Date()
+		var ano = data.getFullYear()
+
+		creditos.innerHTML = `<h5 id="h5-creditos">${ano} Pedro, copyright ©</h5>`
 
 	</script>
 </body>
