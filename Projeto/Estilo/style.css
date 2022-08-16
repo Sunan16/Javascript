@@ -5,11 +5,14 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(168, 167, 167);
-    font-family:Arial, Helvetica, sans-serif
+    background-image: linear-gradient(40deg, rgb(228, 228, 228), rgb(231, 231, 231));
+    font-family: 'Space Mono', monospace;
 }
-p{
-    font-size: 14px;
+p{  
+    font-size: 80%;
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+    
 }
 li{
     display:inline-block;
@@ -20,6 +23,15 @@ a{
     font-weight: bold;
     color: #ffffff;
 }
+h2{
+    color:#696969;
+    text-align: center;
+    font-size: x-large;
+}
+h2, #logo, #navegacao{
+    font-family: 'Silkscreen', cursive;
+    font-weight: lighter;
+}
 
     /*
         Header
@@ -29,7 +41,7 @@ a{
     top: 0;
     left: 0;
     right:0;
-    background-color: rgb(39, 39, 39);
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(22, 22, 22));
     display: grid;
     grid-template-columns: 25% 70%;
     gap: 5%;
@@ -75,63 +87,78 @@ a{
     /*
         FIM Header
   --------------------
-        *Container Layouts*
+        *Layouts Principal*
     */
 
-body#index, #content-1{
+.container-1{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 15% 10% 10% 5% 10% 5% 5%;
+    grid-template-rows: 60px 80px 60px 150px 30px 80px 60px 150px 30px 80px;
+    gap: 15px 1.1%;
+}
+.container-2{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 15% 10% 10% 5% 10% 5% 5%;
+    grid-template-rows: 60px 80px 60px 80px 30px 80px 60px 80px 30px 80px;
+    gap: 15px 1.1%;
+}
+.content-1{
     grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 5;
 }
-body#index #content-2{
+.content-2{
     grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 6;
-    grid-row-end: 8;
+    grid-row-end: 9;
 }
-body#index #sidebar{
+.sidebar{
     grid-column-start: 8;
     grid-column-end: 11;
     grid-row-start: 1;
-    grid-row-end: 11;
+    grid-row-end: 10;
 }
 
-body#index .container-1{
-    display: grid;
-    grid-template-columns: 10% 10% 15% 10% 10% 5% 10% 10% 5% 5%;
-    grid-template-rows: 60px 80px 60px 80px 60px 80px 60px 80px 60px 80px;
-    gap: 15px 1.1%;
-}
 
     /*
-        FIM *Container Layouts*
+        FIM *Layouts Principal*
     --------------------
-        Principal do Site
+        Content Site
     */  
 
+.sidebar{
+    
+}
+.sidebar h2{
+    padding: 2% 1%;
+    font-size: 1.3rem;
+}
+.content-1{
+    padding: 20px 30px;
+}
+.content-2{
+    padding: 20px 30px;
+}
 .container-1{
     padding: 60px 100px;
     position: relative;
 }
 .caixa-conteudo{
     position: relative;
-    padding: 20px 30px;
-    border-radius: 8px;
-    background-color: #93948a63;
-    box-shadow: 0px 0px 5px rgb(29, 29, 29);
+    background-color: rgb(241, 241, 241);
 }
 .caixa-paragrafo{
+    top:10%;
     position: relative;
-    margin-top: 10px;
     padding: 10px;
-    background-color: rgb(219, 218, 218);
+    background-color: #ebebeb;
     color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 5px rgb(82, 81, 81);
 }
 
     /*
-        FIM Container
+        FIM Content Site
     --------------------
         Footer
     */
@@ -148,6 +175,7 @@ body#index .container-1{
     text-shadow: 0 1px 2px black;
     color: rgba(255, 255, 255, 0.788);
     font-size: 90%;
+    font-weight: 600;
 }
 #footer-contatos a:hover{
     color: white;
@@ -198,12 +226,11 @@ body#index .container-1{
 
 .footer{
     position: relative;
-    box-shadow: 0px -1px 7px rgb(7, 7, 7);
     display: grid;
     grid-template-columns: 20% 20% 25% 35%;
     grid-template-rows: auto 20px;
     gap: 20px 0px;
-    background-color: rgb(39, 39, 39);
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(22, 22, 22));
     padding-top: 40px;
     padding-left: 5.5px;
     padding-right: 5.5px;
