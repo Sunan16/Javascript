@@ -15,7 +15,7 @@
 	<title>Javascript</title>
 </head>
 <body id="index">
-	<div id="cabecalho">
+	<header id="cabecalho">
 
 		<div id="logo">
 			<a href="" class="logo">Sunan</a>
@@ -28,11 +28,13 @@
 		</div>
 
 
-	</div> <!-- Fim Header -->
+	</header> <!-- Fim Header -->
 
 	<div class="container-1">
-		<div class="caixa-conteudo content-1">
+		<section class="caixa-conteudo content-1">
+
 			<h2>Minha Historia</h2>
+
 			<div class="caixa-paragrafo">
 				<p class="paragrafo"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur blanditiis laborum 
 					est minima architecto molestiae atque modi nobis impedit itaque aliquam labore et, quae excepturi 
@@ -46,27 +48,32 @@
 					ipsum inventore quam adipisci nulla dolorem, dignissimos facilis sed unde eaque?
 				</p>
 			</div> <!-- Fim div class="caixa-paragrafo"-->
-		</div> <!-- Fim div class="caixa-conteudo" id="content-1"-->
+
+		</section> <!-- Fim section class="caixa-conteudo" id="content-1"-->
 
 
-		<div class="caixa-conteudo sidebar" class="">
+		<aside class="caixa-conteudo sidebar" class="">
+
 			<h2>Navegação</h2>
-		</div> <!-- Fim div class="caixa-conteudo" id="sidebar"-->
+
+		</aside> <!-- Fim aside class="caixa-conteudo" id="sidebar"-->
 
 
-		<div class="caixa-conteudo content-2">
+		<section class="caixa-conteudo content-2">
+
 			<h2>Conteúdo 2</h2>
+
 			<div class="caixa-paragrafo">
 				<p class="paragrafo"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur blanditiis laborum 
 					est minima architecto molestiae atque modi nobis impedit itaque aliquam labore et, quae excepturi 
 				</p>
 			</div>
-		</div> <!-- Fim div class="caixa-conteudo"-->
+		</section> <!-- Fim section class="caixa-conteudo"-->
+
 	</div> <!-- Fim div class="container-1" id="content-2"-->
 
-	
+	<footer class="footer">
 
-	<div class="footer">
 		<div id="footer-contatos">
 			<div id="h3-contato">
 				<h3>Contatos</h3>
@@ -96,7 +103,9 @@
 		<div id="creditos">
 
 		</div>
-	</div>
+
+	</footer>
+
 	<script>
 		var creditos = window.document.querySelector('div#creditos')
 		var data = new Date()
@@ -104,5 +113,6 @@
 
 		creditos.innerHTML = `<h5 id="h5-creditos">${ano} Pedro, copyright ©</h5>`
 	</script>
+
 </body>
 </html>

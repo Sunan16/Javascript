@@ -295,7 +295,7 @@ h2, #logo, #navegacao{
         grid-column-start: 2
     }
     #creditos{
-        grid-column-start: 4;
+        grid-column-start: 3;
         grid-column-end: 6;
         grid-row-start: 2;
         font-size: 90%;
